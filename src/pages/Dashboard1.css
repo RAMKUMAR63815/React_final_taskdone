@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* OVERLAY */
+.dashboard-overlay {
+  background: rgba(0, 0, 0, 0.65);
+  min-height: 100vh;
+  color: white;
+  padding-bottom: 50px;
+}
+
+/* HERO */
+.dashboard-hero {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.dashboard-hero h1 {
+  font-size: 40px;
+}
+
+.dashboard-hero p {
+  opacity: 0.8;
+}
+
+/* INPUT SECTION - FULL CENTER FIX */
+.form-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-left: 350px;
+
+  padding: 20px;
+}
+
+/* INPUT */
+.form-box input {
+  padding: 12px 15px;
+  width: 320px;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  text-align: center;
+  font-size: 15px;
+}
+
+/* BUTTON */
+.form-box button {
+  padding: 12px 20px;
+  border: none;
+  background: #00e5ff;
+  color: black;
+  font-weight: bold;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.form-box button:hover {
+  background: #00bcd4;
+}
+
+/* GRID - CENTER FIX */
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 30px 10%;
+  justify-items: center;
+}
+
+/* CARD */
+.dashboard-card {
+  width: 100%;
+  max-width: 350px;
+
+  background: #bbebe7 !important;  /* 🔴 TEST COLOR */
+
+  color: white;
+
+  padding: 18px 20px;
+  border-radius: 15px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: black;
+
+  transition: 0.3s;
+}
+
+.dashboard-card:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.15);
+}
+
+/* DELETE BUTTON */
+.dashboard-card button {
+  background: crimson;
+  color: white;
+  border: none;
+  padding: 7px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* EMPTY STATE */
+.empty {
+  grid-column: 1 / -1;
+  text-align: center;
+  opacity: 0.8;
+  padding: 50px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+
+  .form-box {
+    flex-direction: column;
+  }
+
+  .form-box input {
+    width: 90%;
+  }
+
+  .dashboard-hero h1 {
+    font-size: 28px;
+  }
+}

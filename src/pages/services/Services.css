@@ -1,0 +1,60 @@
+.services-overlay {
+  background: rgba(0, 0, 0, 0.65);
+  min-height: 100vh;
+  color: white;
+  padding-bottom: 50px;
+}
+
+.services-hero {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.services-hero h1 {
+  font-size: 40px;
+}
+
+.services-hero p {
+  opacity: 0.8;
+}
+
+.services-nav {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  padding: 30px 10%;
+}
+
+.service-card {
+  text-decoration: none;
+  color: white;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  padding: 25px;
+  border-radius: 15px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.service-box {
+  margin: 40px 10%;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+}
+
+@media (max-width: 900px) {
+  .services-nav {
+    grid-template-columns: 1fr;
+  }
+
+  .services-hero h1 {
+    font-size: 28px;
+  }
+}

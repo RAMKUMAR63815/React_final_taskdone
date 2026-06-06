@@ -1,0 +1,118 @@
+.contact-overlay {
+  background: rgba(0, 0, 0, 0.65);
+  min-height: 100vh;
+  color: white;
+  padding-bottom: 50px;
+}
+
+.contact-hero {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.contact-hero h1 {
+  font-size: 40px;
+}
+
+.contact-hero p {
+  opacity: 0.8;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  padding: 30px 10%;
+}
+
+.form-box1 {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 25px;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+}
+
+.form-box1 input,
+.form-box1 textarea {
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+
+.form-box1 textarea {
+  min-height: 120px;
+  resize: none;
+}
+
+.form-box1 button {
+  padding: 12px;
+  border: none;
+  background: #00e5ff;
+  color: black;
+  font-weight: bold;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.form-box1 button:hover {
+  background: #00bcd4;
+}
+
+.info-card {
+  background: linear-gradient(135deg, rgba(0, 229, 255, 0.15), rgba(0, 119, 255, 0.15));
+  backdrop-filter: blur(18px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+  padding: 30px;
+  border-radius: 18px;
+  line-height: 2.2;
+  font-size: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.info-card::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(0, 229, 255, 0.2), transparent 70%);
+  transform: rotate(25deg);
+}
+
+.info-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 40px rgba(0, 229, 255, 0.3);
+}
+
+.info-card h2 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #00e5ff;
+}
+
+.info-card p {
+  margin: 5px 0;
+  opacity: 0.9;
+  font-size: 15px;
+}
+
+@media (max-width: 900px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-hero h1 {
+    font-size: 28px;
+  }
+}

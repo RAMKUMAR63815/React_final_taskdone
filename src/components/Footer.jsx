@@ -1,0 +1,17 @@
+function Footer() {
+  return (
+    <footer
+      style={{
+        background: "#0f172a",
+        color: "white",
+        textAlign: "center",
+        padding: "20px",
+      }}
+    >
+      <h3>TravelGo</h3>
+      <p>© 2026 All Rights Reserved</p>
+    </footer>
+  );
+}
+
+export default Footer;

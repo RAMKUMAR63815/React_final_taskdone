@@ -1,0 +1,103 @@
+.packages-overlay {
+  background: rgba(0, 0, 0, 0.65);
+  min-height: 100vh;
+  color: white;
+  padding-bottom: 50px;
+}
+
+.packages-hero {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.packages-hero h1 {
+  font-size: 42px;
+}
+
+.packages-hero p {
+  opacity: 0.8;
+}
+
+.search-bar {
+  margin-top: 20px;
+  padding: 12px 18px;
+  width: 60%;
+  max-width: 500px;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+}
+
+.packages-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  padding: 40px 10%;
+}
+
+.package-card {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  border-radius: 15px;
+  position: relative;
+  transition: 0.3s;
+}
+
+.package-card:hover {
+  transform: translateY(-10px);
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.tag {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #00e5ff;
+  color: black;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.price {
+  font-size: 22px;
+  margin: 10px 0;
+  color: #00e5ff;
+}
+
+.price span {
+  font-size: 14px;
+  color: #ccc;
+}
+
+.package-card button {
+  padding: 10px 20px;
+  border: none;
+  background: white;
+  color: black;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+@media (max-width: 900px) {
+  .packages-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .search-bar {
+    width: 80%;
+  }
+}
+
+@media (max-width: 600px) {
+  .packages-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .packages-hero h1 {
+    font-size: 28px;
+  }
+}
