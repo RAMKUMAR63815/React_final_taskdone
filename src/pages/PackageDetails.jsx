@@ -7,6 +7,7 @@ function PackageDetails() {
     <div className="page">
       <h1>Package Details</h1>
       <p>You are viewing package ID: {id}</p>
+    <div style={{margin:"30px"}}></div>
 
       <div className="info-card">
         🌍 Full travel details will be shown here  
